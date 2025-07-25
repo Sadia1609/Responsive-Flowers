@@ -12,7 +12,7 @@
 }
 
 body {
-    border: 2px solid skyblue;
+
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -57,13 +57,72 @@ body {
 
 
 /* banner */
+.banner-container {
+    width: 1140px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
 
-/* responsive for small device */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner-descriptions h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+span {
+    color: #E95A08;
+}
+
+.banner-descriptions p {
+  font-size: 1.2rem;
+  color: #777676;
+  max-width: 25em;
+  line-height: 1.5;
+}
+
+
+/* responsive for mobile device */
 @media screen and (max-width: 576px) {
   .nav-item1,
   .nav-item2,
   .nav-item3 {
     display: none;
   }
+
+  .banner-container {
+    width: 100%;
+    margin: auto;
+   }
+
+  .banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: left;
+  }
+
+  .banner-descriptions h3 {
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .banner-descriptions p {
+    font-size: 1rem;
+    max-width: 100%;
+    padding: 0 5px;
+  }
+  
+  .banner-img img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
 }
+
 
