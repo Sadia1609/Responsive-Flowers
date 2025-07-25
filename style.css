@@ -141,6 +141,57 @@ span {
     background-color: #E95A08;
     border: none;
 }
+
+/* flower-store */
+.plant-lover {
+  display: flex;
+  gap: 200px;
+  margin: auto;
+  padding: 70px 0 70px 40px;
+}
+
+.store-img {
+
+  position: relative;
+  width: 400px;
+}
+
+.store-img img {
+  width: 100%;
+  height: auto;
+}
+
+.badge {
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 195px;
+  height: auto;
+  z-index: 30;
+}
+
+.store-texts {
+  height: 500px;
+  width: 30%;
+}
+
+.store-texts h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.store-texts ul {
+  padding-left: 20px;
+  font-size: 1rem;
+  color: #777676;
+  
+}
+
+
+
+
 /* responsive for mobile device */
 @media screen and (max-width: 576px) {
   .nav-item1,
@@ -194,6 +245,25 @@ span {
 
   .btn {
     padding: 5px;
+  }
+
+  .plant-lover {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .store-img {
+    width: 100%;
+  }
+
+  .badge {
+    display: none;
+  }
+
+  .store-texts {
+    width: 100%;
+    margin-top: 10px;
   }
 }
 
